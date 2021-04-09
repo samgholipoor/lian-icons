@@ -1,9 +1,14 @@
 {
-  "name": "market-place",
-  "version": "0.1.0",
-  "private": true,
+  "name": "lian-meeting-icons",
+  "version": "1.0.0",
+  "author": "lian group",
+  "license": "lian",
+  "main": "src/icons.jsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samgholipoor/lian-icons.git"
+  },
   "dependencies": {
-    "@laylazi/bootstrap-rtl": "^4.5.3-1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3"

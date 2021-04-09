@@ -216,6 +216,8 @@ const Icon = (props) => {
       return <ThumbsUp {...props} />;
     case "time":
       return <Time {...props} />;
+    case "view":
+      return <View {...props} />;
     case "wifi":
       return <Wifi {...props} />;
     default:
