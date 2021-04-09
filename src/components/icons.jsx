@@ -75,154 +75,93 @@ import {
 } from "./icons/index";
 
 const Icon = (props) => {
-  switch (props.name?.toLowerCase()) {
-    case "alertinfo":
-      return <AlertInfo {...props} />;
-    case "atsign":
-      return <AtSign {...props} />;
-    case "attach":
-      return <Attach {...props} />;
-    case "backarrow":
-      return <BackArrow {...props} />;
-    case "back":
-      return <Back {...props} />;
-    case "backspace":
-      return <Backspace {...props} />;
-    case "backward":
-      return <Backward {...props} />;
-    case "bag":
-      return <Bag {...props} />;
-    case "bookmark":
-      return <Bookmark {...props} />;
-    case "calandar":
-      return <Calandar {...props} />;
-    case "call":
-      return <Call {...props} />;
-    case "camera":
-      return <Camera {...props} />;
-    case "card":
-      return <Card {...props} />;
-    case "cart":
-      return <Cart {...props} />;
-    case "cast":
-      return <Cast {...props} />;
-    case "chartbar":
-      return <ChartBar {...props} />;
-    case "chartpie":
-      return <ChartPie {...props} />;
-    case "check":
-      return <Check {...props} />;
-    case "chip":
-      return <Chip {...props} />;
-    case "close":
-      return <Close {...props} />;
-    case "comment":
-      return <Comment {...props} />;
-    case "configure":
-      return <Configure {...props} />;
-    case "copy":
-      return <Copy {...props} />;
-    case "cut":
-      return <Cut {...props} />;
-    case "delete":
-      return <Delete {...props} />;
-    case "disabled":
-      return <Disabled {...props} />;
-    case "edit":
-      return <Edit {...props} />;
-    case "emojismile":
-      return <EmojiSmile {...props} />;
-    case "export":
-      return <Export {...props} />;
-    case "file":
-      return <File {...props} />;
-    case "folder":
-      return <Folder {...props} />;
-    case "forwardarrow":
-      return <ForwardArrow {...props} />;
-    case "forwarddouble":
-      return <ForwardDouble {...props} />;
-    case "forwardonce":
-      return <ForwardOnce {...props} />;
-    case "heart":
-      return <Heart {...props} />;
-    case "hide":
-      return <Hide {...props} />;
-    case "home":
-      return <Home {...props} />;
-    case "image":
-      return <Image {...props} />;
-    case "layout":
-      return <Layout {...props} />;
-    case "link":
-      return <Link {...props} />;
-    case "loading":
-      return <Loading {...props} />;
-    case "location":
-      return <Location {...props} />;
-    case "lock":
-      return <Lock {...props} />;
-    case "mail":
-      return <Mail {...props} />;
-    case "map":
-      return <Map {...props} />;
-    case "menuleft":
-      return <MenuLeft {...props} />;
-    case "menuright":
-      return <MenuRight {...props} />;
-    case "microphone":
-      return <Microphone {...props} />;
-    case "more":
-      return <More {...props} />;
-    case "morevert":
-      return <MoreVert {...props} />;
-    case "notification":
-      return <Notification {...props} />;
-    case "paste":
-      return <Paste {...props} />;
-    case "pause":
-      return <Pause {...props} />;
-    case "play":
-      return <Play {...props} />;
-    case "plus":
-      return <Plus {...props} />;
-    case "printer":
-      return <Printer {...props} />;
-    case "profile":
-      return <Profile {...props} />;
-    case "refresh":
-      return <Refresh {...props} />;
-    case "resize":
-      return <Resize {...props} />;
-    case "scroll":
-      return <Scroll {...props} />;
-    case "search":
-      return <Search {...props} />;
-    case "send":
-      return <Send {...props} />;
-    case "settings":
-      return <Settings {...props} />;
-    case "soundmuted":
-      return <SoundMuted {...props} />;
-    case "soundplaying":
-      return <SoundPlaying {...props} />;
-    case "star":
-      return <Star {...props} />;
-    case "tag":
-      return <Tag {...props} />;
-    case "thumbsdown":
-      return <ThumbsDown {...props} />;
-    case "thumbsup":
-      return <ThumbsUp {...props} />;
-    case "time":
-      return <Time {...props} />;
-    case "view":
-      return <View {...props} />;
-    case "wifi":
-      return <Wifi {...props} />;
-    default:
-      <div />;
-  }
+  return (
+    <>
+      {props.name?.toLowerCase() === "alertinfo" && <AlertInfo {...props} />}
+      {props.name?.toLowerCase() === "atsign" && <AtSign {...props} />}
+      {props.name?.toLowerCase() === "attach" && <Attach {...props} />}
+      {props.name?.toLowerCase() === "backarrow" && <BackArrow {...props} />}
+      {props.name?.toLowerCase() === "back" && <Back {...props} />}
+      {props.name?.toLowerCase() === "backspace" && <Backspace {...props} />}
+      {props.name?.toLowerCase() === "backward" && <Backward {...props} />}
+      {props.name?.toLowerCase() === "bag" && <Bag {...props} />}
+      {props.name?.toLowerCase() === "bookmark" && <Bookmark {...props} />}
+      {props.name?.toLowerCase() === "calandar" && <Calandar {...props} />}
+      {props.name?.toLowerCase() === "call" && <Call {...props} />}
+      {props.name?.toLowerCase() === "camera" && <Camera {...props} />}
+      {props.name?.toLowerCase() === "card" && <Card {...props} />}
+      {props.name?.toLowerCase() === "cart" && <Cart {...props} />}
+      {props.name?.toLowerCase() === "cast" && <Cast {...props} />}
+      {props.name?.toLowerCase() === "chartbar" && <ChartBar {...props} />}
+      {props.name?.toLowerCase() === "card" && <Card {...props} />}
+      {props.name?.toLowerCase() === "chartpie" && <ChartPie {...props} />}
+      {props.name?.toLowerCase() === "check" && <Check {...props} />}
+      {props.name?.toLowerCase() === "chip" && <Chip {...props} />}
+      {props.name?.toLowerCase() === "close" && <Close {...props} />}
+      {props.name?.toLowerCase() === "comment" && <Comment {...props} />}
+      {props.name?.toLowerCase() === "configure" && <Configure {...props} />}
+      {props.name?.toLowerCase() === "copy" && <Copy {...props} />}
+      {props.name?.toLowerCase() === "cut" && <Cut {...props} />}
+      {props.name?.toLowerCase() === "delete" && <Delete {...props} />}
+      {props.name?.toLowerCase() === "disabled" && <Disabled {...props} />}
+      {props.name?.toLowerCase() === "edit" && <Edit {...props} />}
+      {props.name?.toLowerCase() === "emojismile" && <EmojiSmile {...props} />}
+      {props.name?.toLowerCase() === "export" && <Export {...props} />}
+      {props.name?.toLowerCase() === "file" && <File {...props} />}
+      {props.name?.toLowerCase() === "folder" && <Folder {...props} />}
+      {props.name?.toLowerCase() === "forwardarrow" && (
+        <ForwardArrow {...props} />
+      )}
+      {props.name?.toLowerCase() === "forwarddouble" && (
+        <ForwardDouble {...props} />
+      )}
+      {props.name?.toLowerCase() === "forwardonce" && (
+        <ForwardOnce {...props} />
+      )}
+      {props.name?.toLowerCase() === "heart" && <Heart {...props} />}
+      {props.name?.toLowerCase() === "hide" && <Hide {...props} />}
+      {props.name?.toLowerCase() === "home" && <Home {...props} />}
+      {props.name?.toLowerCase() === "image" && <Image {...props} />}
+      {props.name?.toLowerCase() === "layout" && <Layout {...props} />}
+      {props.name?.toLowerCase() === "link" && <Link {...props} />}
+      {props.name?.toLowerCase() === "loading" && <Loading {...props} />}
+      {props.name?.toLowerCase() === "location" && <Location {...props} />}
+      {props.name?.toLowerCase() === "lock" && <Lock {...props} />}
+      {props.name?.toLowerCase() === "mail" && <Mail {...props} />}
+      {props.name?.toLowerCase() === "map" && <Map {...props} />}
+      {props.name?.toLowerCase() === "menuleft" && <MenuLeft {...props} />}
+      {props.name?.toLowerCase() === "menuright" && <MenuRight {...props} />}
+      {props.name?.toLowerCase() === "microphone" && <Microphone {...props} />}
+      {props.name?.toLowerCase() === "more" && <More {...props} />}
+      {props.name?.toLowerCase() === "morevert" && <MoreVert {...props} />}
+      {props.name?.toLowerCase() === "notification" && (
+        <Notification {...props} />
+      )}
+      {props.name?.toLowerCase() === "paste" && <Paste {...props} />}
+      {props.name?.toLowerCase() === "pause" && <Pause {...props} />}
+      {props.name?.toLowerCase() === "play" && <Play {...props} />}
+      {props.name?.toLowerCase() === "plus" && <Plus {...props} />}
+      {props.name?.toLowerCase() === "printer" && <Printer {...props} />}
+      {props.name?.toLowerCase() === "profile" && <Profile {...props} />}
+      {props.name?.toLowerCase() === "refresh" && <Refresh {...props} />}
+      {props.name?.toLowerCase() === "resize" && <Resize {...props} />}
+      {props.name?.toLowerCase() === "scroll" && <Scroll {...props} />}
+      {props.name?.toLowerCase() === "search" && <Search {...props} />}
+      {props.name?.toLowerCase() === "send" && <Send {...props} />}
+      {props.name?.toLowerCase() === "settings" && <Settings {...props} />}
+      {props.name?.toLowerCase() === "soundmuted" && <SoundMuted {...props} />}
+      {props.name?.toLowerCase() === "soundplaying" && (
+        <SoundPlaying {...props} />
+      )}
+      {props.name?.toLowerCase() === "star" && <Star {...props} />}
+      {props.name?.toLowerCase() === "tag" && <Tag {...props} />}
+      {props.name?.toLowerCase() === "thumbsdown" && <ThumbsDown {...props} />}
+      {props.name?.toLowerCase() === "thumbsup" && <ThumbsUp {...props} />}{" "}
+      {props.name?.toLowerCase() === "time" && <Time {...props} />}
+      {props.name?.toLowerCase() === "view" && <View {...props} />}
+      {props.name?.toLowerCase() === "wifi" && <Wifi {...props} />}
+    </>
+  );
 };
 
 export default Icon;
