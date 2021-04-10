@@ -72,6 +72,7 @@ import {
   Time,
   View,
   Wifi,
+  Minus,
 } from "./icons/index";
 
 const Icon = (props) => {
@@ -160,6 +161,7 @@ const Icon = (props) => {
       {props.name?.toLowerCase() === "time" && <Time {...props} />}
       {props.name?.toLowerCase() === "view" && <View {...props} />}
       {props.name?.toLowerCase() === "wifi" && <Wifi {...props} />}
+      {props.name?.toLowerCase() === "minus" && <Minus {...props} />}
     </>
   );
 };

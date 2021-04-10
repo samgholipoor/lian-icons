@@ -70,6 +70,7 @@ import { ThumbsUp } from "./ThumbsUp.jsx";
 import { Time } from "./Time.jsx";
 import { View } from "./View.jsx";
 import { Wifi } from "./Wifi.jsx";
+import { Minus } from "./Minus.jsx";
 
 export {
   AlertInfo,
@@ -144,4 +145,5 @@ export {
   Time,
   View,
   Wifi,
+  Minus,
 };
